@@ -1,5 +1,5 @@
 *{
-
+    font-family: 'Rubik', sans-serif !important;
 }
 
 html,body {
@@ -11,7 +11,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 7rem;
+    height: 5rem;
     width: 100%;
     border-bottom: 0.1rem solid black;
 }
@@ -33,5 +33,58 @@ nav a {
 }
 
 nav a:hover {
+    background-color: gray;
+}
+
+#sliders {
+    padding: 0.4rem 0;
+    margin: 0 auto;
+    width: 90vw;
+    height: 44vw;
+}
+
+.slider {
+    height: 100%;
+    width: 100%;
+}
+
+.slider-image {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.slider-items{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.slider-title {
+    font-family: 'Proza Libre', sans-serif !important;
+    font-size: 4rem;
+    color: white;
+    -webkit-text-stroke: 0.1rem black;
+    font-weight: bold;
+}
+
+.slider-button {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 0.5rem 0.7rem;
+    background-color: black;
+    border-radius: 0.2rem;
+    color: white;
+}
+
+.slider-button:hover {
     background-color: gray;
 }

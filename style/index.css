@@ -7,6 +7,10 @@ html,body {
     width: 100%;
 }
 
+.container {
+    padding: 0.4rem 3rem;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -37,34 +41,21 @@ nav a:hover {
 }
 
 #sliders {
-    padding: 0.4rem 0;
+    padding: 0 2rem;
     margin: 0 auto;
-    width: 90vw;
     height: 44vw;
 }
 
-.slider {
-    height: 100%;
-    width: 100%;
-}
-
-.slider-image {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-}
-
 .slider-items{
-    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top;
 }
 
 .slider-title {
@@ -87,4 +78,33 @@ nav a:hover {
 
 .slider-button:hover {
     background-color: gray;
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-row {
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project {
+    width: 22vw;
+    height: 22vw;
+    text-align: center;
+    text-decoration: none;
+}
+
+.project-image {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
+.project-title{
+    font-size: 1.2rem;
 }

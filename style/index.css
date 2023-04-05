@@ -1,6 +1,3 @@
-
-
-
 html,body {
     height: 100%;
     width: 100%;
@@ -94,7 +91,6 @@ nav {
 .slider-button {
     margin-top: 1rem;
 }
- 
 
 #projects {
     display: flex;

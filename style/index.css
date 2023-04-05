@@ -1,1 +1,37 @@
-/* CSS stillerinizi buraya girin */
+*{
+
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7rem;
+    width: 100%;
+    border-bottom: 0.1rem solid black;
+}
+
+#logo {
+    padding: 0 1.5rem;
+}
+
+nav {
+    padding: 0 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 0.5rem 0.7rem;
+    background-color: black;
+    border-radius: 0.2rem;
+    color: white;
+}
+
+nav a:hover {
+    background-color: gray;
+}

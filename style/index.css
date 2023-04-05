@@ -1,6 +1,5 @@
-*{
-    font-family: 'Rubik', sans-serif !important;
-}
+
+
 
 html,body {
     height: 100%;
@@ -8,7 +7,37 @@ html,body {
 }
 
 .container {
-    padding: 0.4rem 3rem;
+    font-family: 'Rubik', sans-serif !important;
+    padding: 0 3rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    font-family: 'Proza Libre', sans-serif !important;
+    padding: 0.5rem 0.7rem;
+    background-color: black;
+    border-radius: 0.2rem;
+    color: white;
+}
+
+.btn:hover {
+    background-color: gray;
+}
+
+.btn-lg {
+    font-family: 'Proza Libre', sans-serif !important;
+    font-size: 1.5rem;
+    padding: 0.7rem 0.9rem;
+    background-color: black;
+    border-radius: 0.2rem;
+    color: white;
+}
+
+.btn-lg:hover {
+    background-color: gray;
 }
 
 header {
@@ -28,34 +57,30 @@ nav {
     padding: 0 1.5rem;
 }
 
-nav a {
-    text-decoration: none;
-    padding: 0.5rem 0.7rem;
-    background-color: black;
-    border-radius: 0.2rem;
-    color: white;
-}
-
-nav a:hover {
-    background-color: gray;
-}
-
 #sliders {
+    position: relative;
     padding: 0 2rem;
     margin: 0 auto;
     height: 44vw;
 }
 
-.slider-items{
+.slider-image{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    filter: brightness(0.6);
+}
+
+.slider-items {
+    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    left: 0;
+    top: 0;
     height: 100%;
     width: 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center top;
 }
 
 .slider-title {
@@ -68,21 +93,13 @@ nav a:hover {
 
 .slider-button {
     margin-top: 1rem;
-    font-size: 1.5rem;
-    text-decoration: none;
-    padding: 0.5rem 0.7rem;
-    background-color: black;
-    border-radius: 0.2rem;
-    color: white;
 }
-
-.slider-button:hover {
-    background-color: gray;
-}
+ 
 
 #projects {
     display: flex;
     flex-direction: column;
+    padding: 2rem 0;
 }
 
 .projects-row {
@@ -95,7 +112,14 @@ nav a:hover {
     width: 22vw;
     height: 22vw;
     text-align: center;
-    text-decoration: none;
+}
+
+.project:hover {
+    filter:brightness(0.4);
+}
+
+.project:hover .project-title {
+    color:red;
 }
 
 .project-image {
@@ -105,6 +129,55 @@ nav a:hover {
     padding-bottom: 1rem;
 }
 
-.project-title{
-    font-size: 1.2rem;
+.project-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: black;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(49, 49, 49);
+    width: 100%;
+    height: 10rem;
+}
+
+#footer-contact {
+    margin-bottom: 2rem;
+}
+
+#footer-contact:hover {
+    background-color: gray;
+}
+
+#social {
+    width: 10rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#social a {
+    font-size: 2rem;
+    color: white;
+}
+
+#social .fa-twitter:hover {
+    color: #00acee;
+}
+
+#social .fa-instagram:hover {
+    background: rgb(254,218,117);
+    background: -moz-linear-gradient(60deg, rgba(254,218,117,1) 0%, rgba(250,126,30,1) 25%, rgba(214,41,118,1) 50%, rgba(150,47,191,1) 75%, rgba(79,91,213,1) 100%);
+    background: -webkit-linear-gradient(60deg, rgba(254,218,117,1) 0%, rgba(250,126,30,1) 25%, rgba(214,41,118,1) 50%, rgba(150,47,191,1) 75%, rgba(79,91,213,1) 100%);
+    background: linear-gradient(60deg, rgba(254,218,117,1) 0%, rgba(250,126,30,1) 25%, rgba(214,41,118,1) 50%, rgba(150,47,191,1) 75%, rgba(79,91,213,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#feda75",endColorstr="#4f5bd5",GradientType=1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#social .fa-linkedin:hover {
+    color: #0072b1;
 }

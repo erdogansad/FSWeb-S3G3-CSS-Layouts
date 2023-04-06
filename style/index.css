@@ -47,7 +47,18 @@ header {
 }
 
 #logo {
+    height: 3rem;
     padding: 0 1.5rem;
+}
+
+#logo a {
+    width: auto;
+    height: 100%;
+}
+
+#logo a img {
+    width: auto;
+    height: 100%;
 }
 
 nav {
@@ -179,4 +190,82 @@ footer {
 
 #social .fa-linkedin:hover {
     color: #0072b1;
+}
+
+@media screen and (max-width: 800px){
+    .container {
+        padding: 0 1rem;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 45%;
+        width: 100%;
+        border-bottom: 0.1rem solid black;
+        padding: 1rem 0;
+    }
+
+    .btn {
+        font-family: 'Proza Libre', sans-serif !important;
+        font-size: 1.4rem;
+        padding: 0.5rem 0.7rem;
+        background-color: black;
+        border-radius: 0.2rem;
+        color: white;
+    }
+
+    #logo {
+        width: 25rem;
+        height: 3rem;
+        text-align: center;
+    }
+
+    #logo a {
+        width: auto;
+        height: 100%;
+    }
+    
+    #logo a img {
+        width: auto;
+        padding-left: 1.2rem;
+        height: 100%;
+    }
+
+    nav {
+        width: 25rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1.5rem;
+    }
+    nav a {
+        margin: 0.1rem 0;
+    }
+
+    #sliders {
+        position: relative;
+        padding: 0 0.5rem;
+        margin: 0 auto;
+        height: 44vw;
+    }
+    
+    .project {
+        width: 22%;
+        height: 22%;
+        margin: 1rem 1rem;
+        text-align: center;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 33%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .slider-title {
+        font-size: 2.5rem;
+    }
 }

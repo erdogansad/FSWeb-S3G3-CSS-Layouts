@@ -50,6 +50,16 @@ header {
     padding: 0 1.5rem;
 }
 
+#logo a {
+    width: auto;
+    height: 100%;
+}
+
+#logo a img {
+    width: auto;
+    height: 100%;
+}
+
 nav {
     width: 25rem;
     padding: 0 1.5rem;

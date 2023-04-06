@@ -51,10 +51,7 @@ header {
 }
 
 nav {
-    width: 25rem;
     padding: 0 1.5rem;
-    display: flex;
-    justify-content: space-between;
 }
 
 #sliders {
@@ -97,18 +94,25 @@ nav {
 
 #projects {
     display: flex;
+    /* flex-direction: column; */
     flex-wrap: wrap;
     padding: 2rem 0;
     width: 100%;
 }
 
+.projects-row {
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
 .project {
-    width: 22%;
-    height: 22%;
+    width: 22vw;
+    height: 22vw;
     margin: 3rem 3rem;
     text-align: center;
     flex-grow: 1;
-    flex-shrink: 1;
+    flex-shrink: 0;
     flex-basis: 25%;
 }
 
@@ -179,19 +183,4 @@ footer {
 
 #social .fa-linkedin:hover {
     color: #0072b1;
-}
-
-@media screen and (max-width: 425px){
-    nav{
-        display: none;
-    }
-    .project {
-        width: 100%;
-        height: 100%;
-        margin: 3rem 3rem;
-        text-align: center;
-        flex-grow: 1;
-        flex-shrink: 1;
-        flex-basis: 100%;
-    }
 }
